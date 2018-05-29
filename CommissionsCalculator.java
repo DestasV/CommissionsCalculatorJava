@@ -56,6 +56,6 @@ public class CommissionsCalculator {
             }
         }
         
-        cache.getCache().forEach((k, v) -> cache.printClientAmount(k));
-}
+        cache.getCache().forEach((k, v) -> System.out.println("ClientId " + k + " transactions amount " + v));
+    }
 }

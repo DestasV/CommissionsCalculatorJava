@@ -33,10 +33,4 @@ public class Cache {
             }
         }
    }
-   
-   synchronized public void printClientAmount(int clientId) {
-       synchronized (cache) {
-            System.out.println("ClientId " + clientId + " transactions amount " + cache.get(clientId));
-       }
-   }
 }
